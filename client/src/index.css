@@ -8,6 +8,7 @@ body {
 }
 
 .caution-tape {
+  color: #fff;
   background-color: crimson;
   display: flex;
   justify-content: center;
