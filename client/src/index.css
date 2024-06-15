@@ -6,3 +6,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.caution-tape {
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+}
+
+.caution-tape a {
+  text-decoration: underline;
+}

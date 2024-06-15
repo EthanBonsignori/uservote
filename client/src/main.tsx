@@ -18,6 +18,13 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <div className="caution-tape">
+          ⚠️ This site is a work in progress and many features may not work yet!
+          &nbsp;
+          <a target="_blank" href="https://github.com/EthanBonsignori/uservote">
+            View it on GitHub.
+          </a>
+        </div>
         <RouterProvider router={router} />
       </ThemeProvider>
       <ReactQueryDevtools initialIsOpen={false} />
