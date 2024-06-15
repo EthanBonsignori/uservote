@@ -1,7 +1,7 @@
 import { Button, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid";
 import { FC, useEffect, useRef } from "react";
 import Typed from "typed.js";
+import feedbackImg from "../assets/feedback.png";
 import Layout from "../components/Layout";
 
 const Root: FC = () => {
@@ -38,19 +38,31 @@ const Root: FC = () => {
   // FIXME: landing page not as early return
   return (
     <Layout>
-      <Grid container spacing={1}>
-        <Grid item xs={12} className="">
+      <div className="hero-section">
+        <img src={feedbackImg} alt="UserVote" className="hero-image" />
+        <div className="hero-text">
           <Typography variant="h2">Collect feedback.</Typography>
           <Typography variant="h2">
             Engage your <span className="" ref={typedRef} />
           </Typography>
-        </Grid>
-        <Grid item>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          </Typography>
           <Button variant="contained" color="primary">
             See more
           </Button>
-        </Grid>
-      </Grid>
+          <Button
+            variant="outlined"
+            color="primary"
+            className="plans-pricing"
+            sx={{ ml: "15px" }}
+          >
+            Plans & Pricing
+          </Button>
+        </div>
+      </div>
     </Layout>
   );
 };
