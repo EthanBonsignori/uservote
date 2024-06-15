@@ -39,11 +39,13 @@ const Root: FC = () => {
   return (
     <Layout>
       <div className="hero-section">
-        <img src={feedbackImg} alt="UserVote" className="hero-image" />
+        <div className="hero-image-container">
+          <img src={feedbackImg} alt="UserVote" className="hero-image" />
+        </div>
         <div className="hero-text">
           <Typography variant="h2">Collect feedback.</Typography>
           <Typography variant="h2">
-            Engage your <span className="" ref={typedRef} />
+            Engage your <span className="typed" ref={typedRef} />
           </Typography>
           <Typography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
